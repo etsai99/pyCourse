@@ -1,10 +1,8 @@
 class Circle:
-    # class attributes
     pi = 3.14
     all_circles = [] # list
     
     def __init__(self, radius):
-		# Constructor
         self.radius = radius
         self.__class__.all_circles.append(self)
         
@@ -28,5 +26,5 @@ class Circle:
     
 c1 = Circle(10)
 c2 = Circle(15)
-print(c1.total_area())
-print(c1.total_area2())
+print(c1.__class__.total_area())
+print(c1.__class__.total_area2())

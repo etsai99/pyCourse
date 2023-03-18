@@ -16,9 +16,9 @@ class Car:
 		print(f"Set {self.model} into brake {brake_mode} mode")
 	def power(self, power_mode):
 		print(f"Set {self.model} into power {power_mode} mode")
-	def get_class_attribute(self):
-		#Get class attribute (through method)
-		print(f"Get class attribute from self-defined method - {self.__class__.material}")
+	#def get_class_attribute(self):
+	#	Get class attribute (through method)
+	#	print(f"Get class attribute from self-defined method - {self.__class__.material}")
   
   
 
@@ -26,7 +26,6 @@ class Car:
 Tesla = Car("Model Y", "White", 2000000)
 print(f"Object Type: {type(Tesla)}")
 
-print(Tesla.color)
 
 print(Tesla.drive("Auto"))
 print(Tesla.brake("Auto"))

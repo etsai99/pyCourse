@@ -1,6 +1,5 @@
 class Car:
 	def __init__(self, model, color, price):
-		# Constructor
 		self.model = model
 		self.color = color
 		self.price = price
@@ -12,9 +11,9 @@ class Car:
 	def power(self, power_mode):
 		print(f"Set {self.model} into power {power_mode} mode")
 
-	@staticmethod
-	def get_wheels():
-		print("4")
+	# @staticmethod
+	# def get_wheels():
+	# 	print("4")
   
 # Create object Tesla  
 Tesla = Car("Model Y", "White", 2000000)
@@ -25,7 +24,7 @@ print(Tesla.drive("Auto"))
 print(Tesla.brake("Auto"))
 print(Tesla.power("Recharge"))
 
-print(f"Get Wheels number through class  {Car.get_wheels()} ")
-print(f"Get Wheels number through object {Tesla.__class__.get_wheels()} ")
+# print(f"Get Wheels number through class  {Car.get_wheels()} ")
+# print(f"Get Wheels number through object {Tesla.__class__.get_wheels()} ")
 
         
